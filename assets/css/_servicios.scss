@@ -1,0 +1,67 @@
+.servicios {
+    max-width: 1200px;
+    width: 100%;
+    width: calc(100% - 4rem);
+    margin: 6rem auto 3rem;
+  }
+
+
+.gridServicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 1rem;
+}
+
+.cardServiciosTitle {
+
+    color: var(--colorBotones);
+    padding: 1rem 0 0 0;
+
+    i {
+    color: var(--colorDetalles);
+padding: 0 1rem;}
+}
+
+.cardServiciosP {
+    margin-left: 1rem;
+}
+
+.lastCard {
+    padding-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 570px) {
+
+
+    .gridServicios {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    }
+
+    .cardServiciosTitle {
+        text-align: center;
+        padding: .5rem;
+    }
+ 
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+    .servicios {
+        width: 100%;
+        padding: .5rem;
+    }
+
+    .gridServicios {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+
+
+}
+
+
+
