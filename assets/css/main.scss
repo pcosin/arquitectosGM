@@ -441,8 +441,8 @@ nav li:hover > ul {
   .closeMenu {
     display: block;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
   }
 }
 
@@ -541,17 +541,22 @@ nav li:hover > ul {
   }
 }
 
-@media screen and (max-width: 380px) {
-  .elegirnos {
-    width: 0.5rem;
+@media screen and (max-width: 375px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-
+  .elegirnos {
+    width: 100%;
+    padding: 0.5rem;
+  }
   .propiedadesDestacadas {
-    width: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
   }
 
   .testimonios {
-    width: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
   }
 
   .search {

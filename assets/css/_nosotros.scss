@@ -1,95 +1,76 @@
 .nosotros {
-    max-width: 1200px;
-    width: 100%;
-    width: calc(100% - 4rem);
-    margin: 6rem auto 3rem;
-  }
+  max-width: 1200px;
+  width: 100%;
+  width: calc(100% - 4rem);
+  margin: 6rem auto 3rem;
+}
 
 .gridNosotros {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 1rem;
 }
 
 .img {
-    margin-top: 1.5rem;
-    display: grid;
-    place-items: center;
+  margin-top: 1.5rem;
+  display: grid;
+  place-items: center;
 }
 
 .cardNosotros {
-    h4 {
-        margin-bottom: 1rem;
-    }
+  h4 {
+    margin-bottom: 1rem;
+  }
 
-    img {
-        max-width: 150px;
-        
-    }
-    i {
-        color: var(--colorDetalles);
-        margin-right: .5rem;
-    }
+  img {
+    max-width: 150px;
+  }
+  i {
+    color: var(--colorDetalles);
+    margin-right: 0.5rem;
+  }
 }
 
 .wrapper_left_nosotros {
-
-    &_title {
-        color: var(--colorDetalles_2);
+  &_title {
+    color: var(--colorDetalles_2);
     font-size: 1.6rem;
     margin-bottom: 1rem;
-}
-
-    &_text {
-        font-size: 1.1rem;
-    }
-
-}
-
-
-.wrapper_right_nosotros {
-    background-color: var(--colorDetalles);
-    width: 100%;
-    padding: 0 .3rem .1rem 0;
-    margin-top: 2rem;
-  
-    img {
-      transform: translate(-1%, -2%);
-      display: block;
-      min-height: 100%;
-      
-    }
   }
 
+  &_text {
+    font-size: 1.1rem;
+  }
+}
 
-  @media screen and (max-width: 450px) {
-    .gridNosotros {
-        
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-       
+.wrapper_right_nosotros {
+  background-color: var(--colorDetalles);
+  width: 100%;
+  padding: 0 0.3rem 0.1rem 0;
+  margin-top: 2rem;
 
+  img {
+    transform: translate(-1%, -2%);
+    display: block;
+    min-height: 100%;
+  }
+}
 
-  } }
+@media screen and (max-width: 450px) {
+  .gridNosotros {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
 
+@media screen and (max-width: 375px) {
+  .gridNosotros {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
 
-  @media screen and (max-width: 375px) {
-    .gridNosotros {
-        
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-       
-
-
-  } }
-
-
-  @media screen and (max-width: 350px) {
-
-    .nosotros {
-        width: 100%;
-        padding: .5rem;
-    }
-
-   
-
-
+@media screen and (max-width: 350px) {
+  .nosotros {
+    width: 100%;
+    padding: 0.5rem;
+  }
 }

@@ -1,25 +1,72 @@
 .obrasVenta {
-    max-width: 1200px;
-    width: 100%;
-    width: calc(100% - 4rem);
-    margin: 6rem auto 3rem;
-  }
-
-
-.listaObras{
-
-    margin-bottom: 1rem;
+  max-width: 1200px;
+  width: 100%;
+  width: calc(100% - 4rem);
+  margin: 6rem auto 3rem;
 }
 
-  .listaObras::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      display: inline-block;
-      background-color: var(--colorDetalles);
-      vertical-align: middle;
-      margin-right: .5rem;
+.gridObras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 5rem;
+}
 
-      
+.rowObras {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listaObras {
+  font-size: var(--regular20);
+  margin-bottom: 1rem;
+}
+
+.listaObras::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--colorDetalles);
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.listaCaracteristicas {
+  font-size: var(--regular20);
+  margin-bottom: 2rem;
+}
+
+object {
+  margin-right: 1rem;
+
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.svgObras {
+  fill: orange;
+}
+
+.wrapper_left_title_obras {
+  color: var(--colorDetalles_2);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.margin {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 570px) {
+  .rowObras {
+    flex-direction: column;
   }
+}
+
+@media screen and (max-width: 375px) {
+  .obrasVenta {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}

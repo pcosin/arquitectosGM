@@ -103,7 +103,7 @@
 
 .cardNosotros i {
   color: var(--colorDetalles);
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .wrapper_left_nosotros_title {
@@ -119,7 +119,7 @@
 .wrapper_right_nosotros {
   background-color: var(--colorDetalles);
   width: 100%;
-  padding: 0 .3rem .1rem 0;
+  padding: 0 0.3rem 0.1rem 0;
   margin-top: 2rem;
 }
 
@@ -147,7 +147,7 @@
 @media screen and (max-width: 350px) {
   .nosotros {
     width: 100%;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 }
 
@@ -162,26 +162,29 @@
   display: -ms-grid;
   display: grid;
   place-items: center;
+  position: relative;
 }
 
 .imgContenedor img {
-  -webkit-transform: translate(-1%, -2%);
-          transform: translate(-1%, -2%);
   background-color: var(--colorDetalles);
   display: block;
   min-height: 100%;
   position: relative;
 }
 
-.imgContenedor img::after {
+.imgContenedor::after {
   content: "";
-  -webkit-transform: translate(-1%, -2%);
-          transform: translate(-1%, -2%);
+  background-color: var(--colorDetalles);
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-transform: scale(3.5);
-          transform: scale(3.5);
+  z-index: -1;
+  -webkit-transform: scale(0.75, 0.97);
+          transform: scale(0.75, 0.97);
+}
+
+.wrapper_left {
+  margin-bottom: 2rem;
 }
 
 .wrapper_left_title {
@@ -233,6 +236,13 @@
   margin: 6rem auto 3rem;
 }
 
+@media screen and (max-width: 375px) {
+  .obras {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+
 .contacto {
   max-width: 1200px;
   width: 100%;
@@ -242,8 +252,8 @@
 
 .boxContacto {
   border-radius: 5px;
-  -webkit-box-shadow: 0px 2px 11px 2px #E7E7E7;
-          box-shadow: 0px 2px 11px 2px #E7E7E7;
+  -webkit-box-shadow: 0px 2px 11px 2px #e7e7e7;
+          box-shadow: 0px 2px 11px 2px #e7e7e7;
 }
 
 .leftBox {
@@ -268,6 +278,7 @@
 
 .leftBox_text {
   margin-bottom: 1rem;
+  font-size: var(--regular20);
 }
 
 .contact_list_row_contacto p {
@@ -276,7 +287,7 @@
 
 .contact_list_row_contacto i {
   color: var(--colorDetalles);
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .rightBox_title {
@@ -308,22 +319,22 @@
 }
 
 .contactoInput ::-webkit-input-placeholder {
-  color: #FFF;
+  color: #fff;
   opacity: 1;
 }
 
 .contactoInput :-ms-input-placeholder {
-  color: #FFF;
+  color: #fff;
   opacity: 1;
 }
 
 .contactoInput ::-ms-input-placeholder {
-  color: #FFF;
+  color: #fff;
   opacity: 1;
 }
 
 .contactoInput ::placeholder {
-  color: #FFF;
+  color: #fff;
   opacity: 1;
 }
 
@@ -342,16 +353,32 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .rightBox {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .contactButton {
     font-size: 1rem;
+  }
+  .boxContacto {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contacto {
+    width: 100%;
+    padding: 0.5rem;
   }
 }
 
 @media screen and (max-width: 350px) {
   .contacto {
-    width: 100%;
-    padding: .5rem;
+    padding: 0;
   }
 }
 
@@ -362,7 +389,25 @@
   margin: 6rem auto 3rem;
 }
 
+.gridObras {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 5rem;
+}
+
+.rowObras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .listaObras {
+  font-size: var(--regular20);
   margin-bottom: 1rem;
 }
 
@@ -374,7 +419,48 @@
   display: inline-block;
   background-color: var(--colorDetalles);
   vertical-align: middle;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
+}
+
+.listaCaracteristicas {
+  font-size: var(--regular20);
+  margin-bottom: 2rem;
+}
+
+object {
+  margin-right: 1rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.svgObras {
+  fill: orange;
+}
+
+.wrapper_left_title_obras {
+  color: var(--colorDetalles_2);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.margin {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 570px) {
+  .rowObras {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .obrasVenta {
+    width: 100%;
+    padding: 0.5rem;
+  }
 }
 
 :root {
@@ -857,8 +943,8 @@ nav li:hover > ul {
   .closeMenu {
     display: block;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
   }
 }
 
@@ -951,15 +1037,22 @@ nav li:hover > ul {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
+  .grid {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
   .elegirnos {
-    width: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
   }
   .propiedadesDestacadas {
-    width: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
   }
   .testimonios {
-    width: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
   }
   .search {
     padding: 0.5rem;

@@ -1,6 +1,13 @@
 .obras {
-    max-width: 1200px;
+  max-width: 1200px;
+  width: 100%;
+  width: calc(100% - 4rem);
+  margin: 6rem auto 3rem;
+}
+
+@media screen and (max-width: 375px) {
+  .obras {
     width: 100%;
-    width: calc(100% - 4rem);
-    margin: 6rem auto 3rem;
+    padding: 0.5rem;
   }
+}

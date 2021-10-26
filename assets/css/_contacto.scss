@@ -1,130 +1,121 @@
 .contacto {
-    max-width: 1200px;
-    width: 100%;
-    width: calc(100% - 4rem);
-    margin: 6rem auto 3rem;
-    
-  }
-
- .boxContacto {
-    border-radius: 5px;
-    box-shadow: 0px 2px 11px 2px #E7E7E7;
-    
- }
-
- .leftBox {
-     padding: 3rem;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-
-
-     &_title {
-        color: var(--colorTitulos);
-        font-size: 1.7rem;
-        margin-bottom: 1rem;
-
-     }
-
-     &_text {
-         margin-bottom: 1rem;
-     }
-     }
-
-     .contact_list_row_contacto {
-
-        p {
-            margin-top: 1rem;
-        }
-         
-
-        i {
-            color: var(--colorDetalles);
-            margin-right: .5rem;
-        }
-     }
-
-
-
-  .rightBox {
-    &_title {
-      color: #fff;
-      font-size: 1.7rem;
-      padding: 3rem 3rem 0 3rem;    
-    }
-  }
-
-  .rightBox {
-      width: 100%;
-      background-color: var(--colorDetalles);
-      border-radius: 0 5px 5px 0;
-
-  }
-
-  .contactoForm {
-    width: 100%;
-    padding: 3rem;
-  }
-  
-  .contactoInput {
-    input,
-    textarea {
-      width: 100%;
-      padding: 1rem;
-      border-radius: 10px;
-      border: 2px solid #fff;
-      outline: none;
-      background-color: transparent;
-      margin-bottom: 1rem;
-    }
-
-    ::placeholder{
-        color: #FFF;
-        opacity: 1;
-    }
-    
-  }
-
-  .contactButton {
-    display: block;
-    text-align: center;
-      background-color: var(--colorBotones);
-      color: #fff;
-      text-align: center;
-      border-radius: 30px 5px 30px 5px;
-      padding: 0.3rem 3.5rem;
-      margin: 1rem auto 0;
-      font-size: 1.5rem;
-      font-weight: 500;
-      border: none;
-      cursor: pointer;
-  }
-
-  @media screen and (max-width: 450px) {
-    .contactButton {
-        font-size: 1rem;
-
-
-    }
-
-
-  }
-
-
-  @media screen and (max-width: 350px) {
-
-    .contacto {
-        width: 100%;
-        padding: .5rem;
-    }
-
-    
-
-
+  max-width: 1200px;
+  width: 100%;
+  width: calc(100% - 4rem);
+  margin: 6rem auto 3rem;
 }
 
+.boxContacto {
+  border-radius: 5px;
+  box-shadow: 0px 2px 11px 2px #e7e7e7;
+}
 
+.leftBox {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  &_title {
+    color: var(--colorTitulos);
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
 
+  &_text {
+    margin-bottom: 1rem;
+    font-size: var(--regular20);
+  }
+}
 
-  
+.contact_list_row_contacto {
+  p {
+    margin-top: 1rem;
+  }
+
+  i {
+    color: var(--colorDetalles);
+    margin-right: 0.5rem;
+  }
+}
+
+.rightBox {
+  &_title {
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 3rem 3rem 0 3rem;
+  }
+}
+
+.rightBox {
+  width: 100%;
+  background-color: var(--colorDetalles);
+  border-radius: 0 5px 5px 0;
+}
+
+.contactoForm {
+  width: 100%;
+  padding: 3rem;
+}
+
+.contactoInput {
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    outline: none;
+    background-color: transparent;
+    margin-bottom: 1rem;
+  }
+
+  ::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
+}
+
+.contactButton {
+  display: block;
+  text-align: center;
+  background-color: var(--colorBotones);
+  color: #fff;
+  text-align: center;
+  border-radius: 30px 5px 30px 5px;
+  padding: 0.3rem 3.5rem;
+  margin: 1rem auto 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .rightBox {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contactButton {
+    font-size: 1rem;
+  }
+
+  .boxContacto {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contacto {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contacto {
+    padding: 0;
+  }
+}
