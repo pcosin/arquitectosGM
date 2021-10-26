@@ -36,9 +36,13 @@
 
     &_title {
         color: var(--colorDetalles_2);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
 }
+
+    &_text {
+        font-size: 1.1rem;
+    }
 
 }
 

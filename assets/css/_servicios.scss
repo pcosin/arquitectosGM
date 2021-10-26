@@ -12,18 +12,33 @@
     gap: 1rem;
 }
 
+.cardServicios {
+    padding: 1rem;
+   
+}
+
 .cardServiciosTitle {
 
     color: var(--colorBotones);
-    padding: 1rem 0 0 0;
+    padding: 1rem 0 0 3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
 
     i {
     color: var(--colorDetalles);
-padding: 0 1rem;}
+    padding: 0 .7rem;
+    margin-left: -3rem;
+  
 }
+}
+
+
+
 
 .cardServiciosP {
     margin-left: 1rem;
+    font-size: 1.1rem;
 }
 
 .lastCard {
@@ -42,6 +57,19 @@ padding: 0 1rem;}
     .cardServiciosTitle {
         text-align: center;
         padding: .5rem;
+        font-size: 1.1rem;
+
+        i {
+            color: var(--colorDetalles);
+            padding: 0 .5rem;
+            margin-left: -2rem;
+          
+        }
+    }
+
+    .cardServiciosP {
+       
+        font-size: 1rem;
     }
  
 

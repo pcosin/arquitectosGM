@@ -1,3 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Arquitectos GM</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo"><img src="./assets/img/logo.png"></a>
+
+            <div id="nav-menu" class="nav-menu">
+
+                <ul class="nav__list">
+                 
+
+                    <li class="nav__item"><a href="index.html" class="button">Inicio</a></li>
+                    <li class="nav__item"><a href="obrasNuevas.html" class="button">Obras</a></li>
+                    <li class="nav__item"><a href="servicios.html" class="button">Servicios</a></li>
+                    <li class="nav__item"><a href="nosotros.html" class="button">Nosotros</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="button">Contacto</a></li>
+
+                    <div class="closeMenu"><i class="fas fa-times"></i></div>
+    
+
+                </ul>
+            </div>
+
+            <div class="openMenu"><i class="fas fa-bars"></i></div>
+
+
+        </nav>
+    </header>
 <main class="main">
 
     <section class="obrasVenta section">
@@ -6,9 +46,10 @@
 
 
         <div class="slider">
-            <img src="" alt="">
+            <div class="imgContenedor">
+            <img src="./assets/img/casaHome.jpeg" alt="">
         </div>
-
+        </div>
     </section>
 
     <section class="obrasVenta section">
@@ -16,7 +57,7 @@
         <div class="grid">
     
             <div class="wrapper_left">
-                <h4 class="wrapper_left_title">Acerca de la propiedad</h4>
+                <h4 class="wrapper_left_title textCenter">Acerca de la propiedad</h4>
                
               
                 <p class="wrapper_left_text">Casa de 143 m2 totales desarrollada en 2 plantas sobre un terreno de 600 m2. Posee 3 amplios dormitorios, el matrimonial en suite con una amplia terraza privada. Se caracteriza por su estilo moderno y minimalista, amplios ventanales y construcción de categoría. 
@@ -38,92 +79,160 @@
         </div>
     </section>
 
+
+    <section class="obrasVenta section">
+
+        <div class="grid">
+    
+            <div class="wrapper_left">
+                <h4 class="wrapper_left_title">Planta baja</h4>
+                <ul>
+                    <li class="listaObras">Cochera semicubierta para dos autos</li>
+                    <li class="listaObras">Toilette de recepción
+                    </li>
+                    <li class="listaObras">Cocina integrada con muebles bajo mesada y alacenas
+                    </li>
+                    <li class="listaObras">Living- comedor
+                    </li>
+                    <li class="listaObras">Lavadero
+                    </li>
+                    <li class="listaObras">Galería y amplia parrilla
+                    </li>
+                    <li class="listaObras">Lorem ipsum</li>
+                    <li class="listaObras">Lorem ipsum</li>
+
+
+                </ul>      
+
+            </div>
+             
+            <div class="wrapper_right">
+                <img src="./assets/img/PLANO NC.jpeg" alt="edifcio horizontal">
+    
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="obrasVenta section">
+
+        <div class="grid">
+    
+            <div class="wrapper_left">
+                <h4 class="wrapper_left_title">Planta alta</h4>
+                <ul>
+                    <li class="listaObras">Habitación matrimonial en suite con amplio vestidor
+                    </li>
+                    <li class="listaObras">Amplia terraza privada para habitación matrimonial
+                    </li>
+                    <li class="listaObras">2 Habitaciones en semisuite, ambas con placard
+                    </li>
+                    <li class="listaObras">Lorem ipsum</li>
+                    <li class="listaObras">Lorem ipsum</li>
+                    <li class="listaObras">Lorem ipsum</li>
+
+               
+
+                </ul>      
+
+            </div>
+             
+            <div class="wrapper_right">
+                <img src="./assets/img/PLANO NC.jpeg" alt="edifcio horizontal">
+    
+            </div>
+        </div>
+
+
+    </section>
+
 </main>    
 
-
-                                 <!--  Footer  -->
+                                     <!--  Footer  -->
         
         
-                                 <footer class="footer section">
+                                     <footer class="footer section">
         
-                                    <div class="footer_first">
-                                        <div class="newsletter row">
-                                            <div class="text">
-                                                <h4 class="text_title">newsletter</h4>
-                                                <p class="text_para">Suscribite para recibir novedades y promociones exclusivas.
-                        
-                                                </p>
+                                        <div class="footer_first">
+                                            <div class="newsletter row">
+                                                <div class="text">
+                                                    <h4 class="text_title">newsletter</h4>
+                                                    <p class="text_para">Suscribite para recibir novedades y promociones exclusivas.
+                            
+                                                    </p>
+                                                </div>
+                                        
+                                                <div class="search row">
+                                                    <input type="email" placeholder="Ingresá tu email">
+                                                <button class="email" type="submit"><svg viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <text x="50%" y="50%" text-anchor="middle" fill="white" font-family="raleway" dy=".3em">Suscribirse</text>
+                            
+                                                    </svg>
+                                                    </button>
                                             </div>
                                     
-                                            <div class="search row">
-                                                <input type="email" placeholder="Ingresá tu email">
-                                            <button class="email" type="submit"><svg viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <text x="50%" y="50%" text-anchor="middle" fill="white" font-family="raleway" dy=".3em">Suscribirse</text>
-                        
-                                                </svg>
-                                                </button>
-                                        </div>
-                                
+                                            </div>
+                                        
                                         </div>
                                     
-                                    </div>
-                                
-                                    <div class="footer_second">
-                                        <div class="footer_list row">
-                                
-                                            <div class="footer_list_row_1">
-                                               
-                                                <div>
-                                                    <h2 class="footer_item_title">Nosotros</h2>
-                                                    <p class="footer_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus porttitor turpis sit vehicula faucibus enim, malesuada felis. Eget pharetra, aliquet ac sollicitudin augue. Morbi accumsan, lorem ut ut urna, ipsum elementum.</p>
+                                        <div class="footer_second">
+                                            <div class="footer_list row">
+                                    
+                                                <div class="footer_list_row_1">
+                                                   
+                                                    <div>
+                                                        <h2 class="footer_item_title">Nosotros</h2>
+                                                        <p class="footer_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus porttitor turpis sit vehicula faucibus enim, malesuada felis. Eget pharetra, aliquet ac sollicitudin augue. Morbi accumsan, lorem ut ut urna, ipsum elementum.</p>
+                                                    </div>
+                                                    <div>
+                                                    <h2 class="footer_item_title">Nuestras redes</h2>
+                                                    <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+                                                   <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                                                    <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                <h2 class="footer_item_title">Nuestras redes</h2>
-                                                <a href=""><i class="fab fa-facebook fa-2x"></i></a>
-                                               <a href=""><i class="fab fa-instagram fa-2x"></i></a>
-                                                <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+                                    
+                                                <div class="footer_list_row">
+                                    
+                                                    <div>
+                                                        <h2 class="footer_item_title">Links</h2>
+                                                    <ul class="footer_link">
+                                                        <li class="footer_links"><a href="">Inicio</a></li>
+                                                        <li class="footer_links"><a href="">Obras recientes</a></li>
+                                                        <li class="footer_links"><a href="">Reformas y ampliaciones</a></li>
+                                                        <li class="footer_links"><a href="">Propiedades en venta</a></li>
+                                                        <li class="footer_links"><a href="">Servicios</a></li>
+                                                        <li class="footer_links"><a href="">Nosotros</a></li>
+                                                        <li class="footer_links"><a href="">Contacto</a></li>
+                                                    </ul>
+                                                   
+                                                    </div>
+                                    
                                                 </div>
+                                    
+                                                <div class="footer_list_row">
+                                                   <div class="footer_list_row_contacto">
+                                                    <h2 class="footer_item_title">Contacto</h2>
+                                                    
+                                                    <div class="footer_link">
+                                                    <p><i class="far fa-envelope"></i>Consultas@asdgsa.com</p>
+                                                    <p><i class="fas fa-phone-volume"></i>1130743823</p>
+                                                    <p><i class="fas fa-map-marker-alt"></i>San Miguel, Bs As.</p>
+                                                    
+                                                    </div>
+                                    
+                                                   </div>
+                                    
+                                                </div>
+                                    
+                                    
                                             </div>
-                                
-                                            <div class="footer_list_row">
-                                
-                                                <div>
-                                                    <h2 class="footer_item_title">Links</h2>
-                                                <ul class="footer_link">
-                                                    <li class="footer_links"><a href="">Inicio</a></li>
-                                                    <li class="footer_links"><a href="">Obras recientes</a></li>
-                                                    <li class="footer_links"><a href="">Reformas y ampliaciones</a></li>
-                                                    <li class="footer_links"><a href="">Propiedades en venta</a></li>
-                                                    <li class="footer_links"><a href="">Servicios</a></li>
-                                                    <li class="footer_links"><a href="">Nosotros</a></li>
-                                                    <li class="footer_links"><a href="">Contacto</a></li>
-                                                </ul>
-                                               
-                                                </div>
-                                
-                                            </div>
-                                
-                                            <div class="footer_list_row">
-                                               <div class="footer_list_row_contacto">
-                                                <h2 class="footer_item_title">Contacto</h2>
-                                                
-                                                <div class="footer_link">
-                                                <p><i class="far fa-envelope"></i>Consultas@asdgsa.com</p>
-                                                <p><i class="fas fa-phone-volume"></i>1130743823</p>
-                                                <p><i class="fas fa-map-marker-alt"></i>San Miguel, Bs As.</p>
-                                                
-                                                </div>
-                                
-                                               </div>
-                                
-                                            </div>
-                                
-                                
                                         </div>
-                                    </div>
-                                </footer>
-                                <script src="https://kit.fontawesome.com/aa037f8851.js" crossorigin="anonymous"></script>
-                        
-                        
-                        </body>
-                        </html>
+                            
+                            <div class="textCopy textCenter"><p>Copyright <i class="far fa-copyright"></i> 2021 <u>Codearonline</u> Todos los derechos reservados.</p></div>        </footer>
+                                    <script src="https://kit.fontawesome.com/aa037f8851.js" crossorigin="anonymous"></script>
+                            
+                            
+                            </body>
+                            </html>

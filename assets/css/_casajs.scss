@@ -1,0 +1,25 @@
+.obrasVenta {
+    max-width: 1200px;
+    width: 100%;
+    width: calc(100% - 4rem);
+    margin: 6rem auto 3rem;
+  }
+
+
+.listaObras{
+
+    margin-bottom: 1rem;
+}
+
+  .listaObras::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: var(--colorDetalles);
+      vertical-align: middle;
+      margin-right: .5rem;
+
+      
+  }
