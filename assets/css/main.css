@@ -427,14 +427,10 @@
   margin-bottom: 2rem;
 }
 
-object {
-  margin-right: 1rem;
+.svgObras {
+  margin-right: 0.7rem;
   vertical-align: middle;
   display: inline-block;
-}
-
-.svgObras {
-  fill: orange;
 }
 
 .wrapper_left_title_obras {
@@ -445,6 +441,22 @@ object {
 
 .margin {
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .gridObras {
+    gap: 2rem;
+  }
+  .listaCaracteristicas {
+    font-size: 0.98rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rowObras {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -460,6 +472,10 @@ object {
   .obrasVenta {
     width: 100%;
     padding: 0.5rem;
+  }
+  .gridObras {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
@@ -537,7 +553,7 @@ select {
   position: absolute;
   content: "";
   height: 2px;
-  bottom: -1px;
+  bottom: 5px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -647,8 +663,9 @@ nav li:hover > ul {
 .home {
   height: 100vh;
   width: 100vw;
-  background-image: url(../img/casaHome.jpeg);
+  background-image: url(../img/home_2.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -951,7 +968,7 @@ nav li:hover > ul {
 @media screen and (max-width: 780px) {
   /*========== Footer ==========*/
   .section_titulo {
-    line-height: 1.3;
+    line-height: 0;
   }
   .footer_second .row {
     -webkit-box-orient: vertical;
@@ -995,6 +1012,21 @@ nav li:hover > ul {
 }
 
 @media screen and (max-width: 570px) {
+  .section_titulo {
+    line-height: 1;
+    padding: 0;
+  }
+  .section_titulo::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -10px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 20%;
+    background: var(--colorDetalles);
+  }
   .homeTextos {
     padding: 0 2rem;
   }

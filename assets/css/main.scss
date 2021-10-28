@@ -81,7 +81,7 @@ select {
     position: absolute;
     content: "";
     height: 2px;
-    bottom: -1px;
+    bottom: 5px;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -175,9 +175,11 @@ nav li:hover > ul {
 .home {
   height: 100vh;
   width: 100vw;
-  background-image: url(../img/casaHome.jpeg);
+  background-image: url(../img/home_2.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+
   display: flex;
   align-items: center;
 
@@ -450,7 +452,7 @@ nav li:hover > ul {
   /*========== Footer ==========*/
 
   .section_titulo {
-    line-height: 1.3;
+    line-height: 0;
   }
 
   .footer_second .row {
@@ -492,6 +494,24 @@ nav li:hover > ul {
 }
 
 @media screen and (max-width: 570px) {
+  .section_titulo {
+    line-height: 1;
+    padding: 0;
+  }
+
+  .section {
+    &_titulo::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      bottom: -10px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 20%;
+      background: var(--colorDetalles);
+    }
+  }
   .homeTextos {
     padding: 0 2rem;
     h1 {

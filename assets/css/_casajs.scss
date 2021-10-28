@@ -37,15 +37,10 @@
   margin-bottom: 2rem;
 }
 
-object {
-  margin-right: 1rem;
-
+.svgObras {
+  margin-right: 0.7rem;
   vertical-align: middle;
   display: inline-block;
-}
-
-.svgObras {
-  fill: orange;
 }
 
 .wrapper_left_title_obras {
@@ -58,6 +53,22 @@ object {
   margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .gridObras {
+    gap: 2rem;
+  }
+
+  .listaCaracteristicas {
+    font-size: 0.98rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rowObras {
+    justify-content: space-around;
+  }
+}
+
 @media screen and (max-width: 570px) {
   .rowObras {
     flex-direction: column;
@@ -68,5 +79,9 @@ object {
   .obrasVenta {
     width: 100%;
     padding: 0.5rem;
+  }
+
+  .gridObras {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
