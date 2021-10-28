@@ -22,41 +22,70 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <a href="index.html" class="nav__logo"
-          ><img src="./assets/img/logo.png"
-        /></a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid row2">
+          <div class="navbar-brand nav__logo">
+            <a href="index.html"> <img src="./assets/img/logo.png" /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div id="nav-menu" class="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" class="button">Inicio</a>
-            </li>
-            <li class="nav__item">
-              <a href="obrasNuevas.html" class="button"
-                >Obras <i class="fas fa-chevron-down"></i>
-              </a>
-              <ul>
-                <li><a href="obrasVenta.html">En venta</a></li>
-                <li><a href="obrasNuevas.html">Nuevas</a></li>
-                <li><a href="obrasReformas.html">Reformas</a></li>
-              </ul>
-            </li>
-            <li class="nav__item">
-              <a href="servicios.html" class="button">Servicios</a>
-            </li>
-            <li class="nav__item">
-              <a href="nosotros.html" class="button">Nosotros</a>
-            </li>
-            <li class="nav__item">
-              <a href="contacto.html" class="button">Contacto</a>
-            </li>
-
-            <div class="closeMenu"><i class="fas fa-times"></i></div>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="obrasNuevas.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Obras
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="obrasVenta.html">En venta</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="obrasNuevas.html">Nuevas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="obrasReformas.html"
+                      >Reformas</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="openMenu"><i class="fas fa-bars"></i></div>
       </nav>
     </header>
 
@@ -214,7 +243,7 @@
 
     <footer class="footer section">
       <div class="footer_first">
-        <div class="newsletter row">
+        <div class="newsletter row2">
           <div class="text">
             <h4 class="text_title">newsletter</h4>
             <p class="text_para">
@@ -222,7 +251,7 @@
             </p>
           </div>
 
-          <div class="search row">
+          <div class="search row2">
             <input type="email" placeholder="Ingresá tu email" />
             <button class="email" type="submit">
               <svg
@@ -236,7 +265,7 @@
                   text-anchor="middle"
                   fill="white"
                   font-family="raleway"
-                  dy=".5em"
+                  dy=".3em"
                 >
                   Suscribirse
                 </text>
@@ -247,7 +276,7 @@
       </div>
 
       <div class="footer_second">
-        <div class="footer_list row">
+        <div class="footer_list row2">
           <div class="footer_list_row_1">
             <div>
               <h2 class="footer_item_title">Nosotros</h2>

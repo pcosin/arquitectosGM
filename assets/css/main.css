@@ -3,7 +3,7 @@
   max-width: 1200px;
   width: 100%;
   width: calc(100% - 4rem);
-  margin: 6rem auto 3rem;
+  margin: 7rem auto 3rem;
 }
 
 .gridServicios {
@@ -27,7 +27,7 @@
 
 .cardServiciosTitle i {
   color: var(--colorDetalles);
-  padding: 0 .7rem;
+  padding: 0 0.7rem;
   margin-left: -3rem;
 }
 
@@ -47,12 +47,12 @@
   }
   .cardServiciosTitle {
     text-align: center;
-    padding: .5rem;
+    padding: 0.5rem;
     font-size: 1.1rem;
   }
   .cardServiciosTitle i {
     color: var(--colorDetalles);
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     margin-left: -2rem;
   }
   .cardServiciosP {
@@ -63,7 +63,7 @@
 @media screen and (max-width: 350px) {
   .servicios {
     width: 100%;
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .gridServicios {
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
@@ -75,7 +75,7 @@
   max-width: 1200px;
   width: 100%;
   width: calc(100% - 4rem);
-  margin: 6rem auto 3rem;
+  margin: 7rem auto 3rem;
 }
 
 .gridNosotros {
@@ -155,7 +155,7 @@
   max-width: 1200px;
   width: 100%;
   width: calc(100% - 4rem);
-  margin: 6rem auto 3rem;
+  margin: 7rem auto 3rem;
 }
 
 .imgContenedor {
@@ -233,7 +233,7 @@
   max-width: 1200px;
   width: 100%;
   width: calc(100% - 4rem);
-  margin: 6rem auto 3rem;
+  margin: 7rem auto 3rem;
 }
 
 @media screen and (max-width: 375px) {
@@ -247,7 +247,7 @@
   max-width: 1200px;
   width: 100%;
   width: calc(100% - 4rem);
-  margin: 6rem auto 3rem;
+  margin: 7rem auto 3rem;
 }
 
 .boxContacto {
@@ -386,7 +386,7 @@
   max-width: 1200px;
   width: 100%;
   width: calc(100% - 4rem);
-  margin: 6rem auto 3rem;
+  margin: 7rem auto 3rem;
 }
 
 .gridObras {
@@ -569,7 +569,7 @@ select {
   gap: 1rem;
 }
 
-.row {
+.row2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,70 +588,30 @@ select {
   background-color: rgba(255, 255, 255, 0.35);
 }
 
-.nav {
-  max-width: 1200px;
-  width: calc(100% - 4rem);
-  height: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-}
-
 .nav__logo {
   max-width: 140px;
   min-width: 140px;
 }
 
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 4rem;
+.navbar {
+  background-color: rgba(255, 255, 255, 0.35) !important;
 }
 
-.nav__item {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  position: relative;
+.navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.nav-item {
   font-size: var(--navSize);
   font-weight: 500;
-}
-
-.nav__item a {
   color: var(--colorTitulos);
+  margin-right: 4rem;
 }
 
-.nav__item:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-}
-
-nav li > ul {
-  display: none;
-}
-
-nav li:hover > ul {
-  display: block;
-  position: absolute;
-  top: 30px;
-  left: 0px;
-}
-
-.closeMenu,
-.openMenu {
-  font-size: 2rem;
-  display: none;
-  cursor: pointer;
+.nav-link {
+  color: var(--colorTitulos) !important;
 }
 
 .shadowNav {
@@ -872,7 +832,7 @@ nav li:hover > ul {
   font-size: 1rem;
 }
 
-.footer_second .row {
+.footer_second .row2 {
   gap: 4rem;
   padding: 2rem;
 }
@@ -954,15 +914,6 @@ nav li:hover > ul {
   .nav__item--contacto {
     display: inline-block;
   }
-  .nav .openMenu {
-    display: block;
-  }
-  .closeMenu {
-    display: block;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-  }
 }
 
 @media screen and (max-width: 780px) {
@@ -970,14 +921,14 @@ nav li:hover > ul {
   .section_titulo {
     line-height: 0;
   }
-  .footer_second .row {
+  .footer_second .row2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 2rem;
   }
-  .footer_first > .row {
+  .footer_first > .row2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
