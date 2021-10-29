@@ -219,11 +219,9 @@
 
 .wrapper_right {
   max-width: 400px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 570px) {
@@ -452,6 +450,10 @@ input[type="number"] {
   margin-right: 0.7rem;
   vertical-align: middle;
   display: inline-block;
+}
+
+.toilet {
+  padding-left: -1rem !important;
 }
 
 .wrapper_left_title_obras {
