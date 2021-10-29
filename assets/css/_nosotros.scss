@@ -31,11 +31,16 @@
   }
 }
 
+.marginTop {
+  margin-bottom: 1.2rem;
+}
+
 .wrapper_left_nosotros {
   &_title {
     color: var(--colorDetalles_2);
     font-size: 1.6rem;
     margin-bottom: 1rem;
+    font-weight: 700;
   }
 
   &_text {

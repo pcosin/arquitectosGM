@@ -75,6 +75,7 @@ select {
     position: relative;
     line-height: 0.1;
     margin-bottom: 3rem;
+    font-weight: 700;
   }
 
   &_titulo::after {
@@ -200,6 +201,7 @@ select {
     color: var(--colorDetalles_2);
     font-size: var(--mediumSize);
     margin-top: 1rem;
+    font-weight: 600;
   }
 
   p {
@@ -341,6 +343,7 @@ select {
   font-size: var(--titulosSize);
   color: var(--colorNews);
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .footer_item_title {
@@ -349,6 +352,7 @@ select {
   position: relative;
   line-height: 1.3;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .footer_item_title::after {

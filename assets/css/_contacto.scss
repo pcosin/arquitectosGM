@@ -1,3 +1,15 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .contacto {
   max-width: 1200px;
   width: 100%;
@@ -20,6 +32,7 @@
     color: var(--colorTitulos);
     font-size: 1.7rem;
     margin-bottom: 1rem;
+    font-weight: 600;
   }
 
   &_text {
@@ -31,6 +44,7 @@
 .contact_list_row_contacto {
   p {
     margin-top: 1rem;
+    font-size: var(--regular20);
   }
 
   i {
@@ -44,6 +58,7 @@
     color: #fff;
     font-size: 1.7rem;
     padding: 3rem 3rem 0 3rem;
+    font-weight: 600;
   }
 }
 
